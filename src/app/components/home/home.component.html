@@ -1,0 +1,17 @@
+<section>
+  <mat-card *ngFor="let dados of projetos">
+      <mat-card-header>
+          <img alt="avatar dono" matCardAvatar [src]="dados.imgAvatar">
+          <mat-card-title>{{dados.title}}</mat-card-title>
+          <mat-card-subtitle>{{dados.subtitle}}</mat-card-subtitle>
+      </mat-card-header>
+      <img class="imagem-des" alt="Imagem descrição" matCardImage [src]="dados.imgDetalhes">
+      <mat-card-content>
+          {{dados.textContent}}
+      </mat-card-content>
+      <mat-card-actions align="start">
+          <button color="primary" mat-stroked-button>Detalhes</button>
+      </mat-card-actions>
+  </mat-card>
+</section>
+
